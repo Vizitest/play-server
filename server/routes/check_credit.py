@@ -40,13 +40,13 @@ def check_credit(namespace: str):  # put application's code here
 
     if age<26: 
       if creditSought>1000: 
-        return {msg: 'We only offer up to 1000 of credit for 18 to 25 year olds'}, 404, CONTENT_TYPE_JSON
+        return {"msg": "We only offer up to 1000 of credit for 18 to 25 year olds"}, 404, CONTENT_TYPE_JSON
       if duration>24:
-         return {msg: 'We offer max 24 months of credit for 18 to 25 year olds' }, 404, CONTENT_TYPE_JSON
+         return {"msg": "We offer max 24 months of credit for 18 to 25 year olds" }, 404, CONTENT_TYPE_JSON
       return {}, 200, CONTENT_TYPE_JSON
 
     if creditSought>1000:
-       return {msg: 'We only offer up to 10000 of credit if 26 or older'}, 404, CONTENT_TYPE_JSON
+       return {"msg": "We only offer up to 10000 of credit if 26 or older"}, 404, CONTENT_TYPE_JSON
     if duration>48:
-       return {msg: 'We offer max 48 months of credit if 26 or older' }, 404, CONTENT_TYPE_JSON
+       return {"msg": "We offer max 48 months of credit if 26 or older" }, 404, CONTENT_TYPE_JSON
     return {}, 200, CONTENT_TYPE_JSON
