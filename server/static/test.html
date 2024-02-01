@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+    <script defer>
+        window.addEventListener("load", () => {
+            let target = document.getElementById("javascript-target");
+            let content = document.createTextNode("Hello from JS");
+            target.appendChild(content);
+        });
+    </script>
+</head>
+<body>
+<h1>Test</h1>
+<p>Test</p>
+<p id="javascript-target"></p>
+</body>
+</html>
