@@ -1,0 +1,11 @@
+{
+  "$comment": "some sample json",
+  "string": "Hello World",
+  "number": 3.1415,
+  "array": [ [ 1, 0, 0, 0 ],
+            [ 0, 1, 0, 0 ],
+            [ 0, 0, 1, 0 ],
+            [ 0, 0, 0, 1]
+          ],
+  "boolean": true
+}

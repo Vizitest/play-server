@@ -13,7 +13,10 @@ def mime_test(mimetype: str):
     sample_files = {
         'application/json': 'test.json',
         'text/html': 'test.html',
-        'text/plain': 'test.txt'
+        'text/plain': 'test.txt',
+        'audio/mpeg': 'test.mp3',
+        'image/png': 'test.png',
+        'video/webm': 'test.webm'
     }
 
     if mimetype in sample_files:
