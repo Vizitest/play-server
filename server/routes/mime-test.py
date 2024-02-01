@@ -4,8 +4,8 @@ from server.constants import CONTENT_TYPE_JSON
 import json
 
 
-@app.route('/mime-test/<path:mimetype>', methods=['GET'])
-def mime_test(mimetype: str):
+@app.route('/server/<namespace>/mime-test/<path:mimetype>', methods=['GET'])
+def mime_test(namespace: str, mimetype: str):
     """
     This endpoint returns sample data for the given mimetype.
     """
