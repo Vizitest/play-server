@@ -13,7 +13,7 @@ def mime_test(namespace: str, mimetype: str):
 
     if mimetype == 'image':
 #         return url_for('static', filename='test.png'), 200, CONTENT_TYPE_IMAGE_PNG
-        return 'https://picsum.photos/200/300', 200, CONTENT_TYPE_IMAGE_PNG
+        return 'https://picsum.photos/1200/1000', 200, CONTENT_TYPE_IMAGE_PNG
 
     if mimetype == 'audio':
        return url_for('static', filename='audio.mp3'), 200, CONTENT_TYPE_AUDIO_MPEG
